@@ -4,6 +4,11 @@ var gulp = require('gulp');
 var eslint = require('gulp-eslint');
 var mocha = require('gulp-mocha');
 
+gulp.task('default', ['mocha-test', 'eslint-test'], function(){
+  console.log('mocha-test ran');
+  console.log('eslint-ran');
+});
+
 gulp.task('mocha-test', function(){
   //src is greet-test.js
   return gulp.src(__dirname + '/test/greet-test.js')
