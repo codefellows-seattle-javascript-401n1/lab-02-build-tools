@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/FazioD/lab-02-build-tools#readme",
   "devDependencies": {
+    "eslint-watch": "^2.1.10",
     "gulp": "^3.9.1",
     "gulp-mocha": "^2.2.0"
   }
