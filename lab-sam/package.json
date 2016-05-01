@@ -1,0 +1,11 @@
+{
+  "name": "lab-build-tools",
+  "description": "a codefellows 401 lab where we explore build tools",
+  "version": "1.0.0",
+  "devDependencies": {
+    "gulp-cli": "1.2.1",
+    "gulp-eslint": "^2.0.0",
+    "gulp-mocha": "^2.2.0",
+    "mocha": "^2.4.5"
+  }
+}
