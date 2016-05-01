@@ -10,9 +10,10 @@ gulp.task('mocha-test', function(){
     //stream  through gulp-mocha
     .pipe(mocha());
 });
-// gulp.task('eslint-tests', function(){
-//   //source is all files in lab-doug except node_modules folder
-//   return gulp.src(__dirname + 'some glob' && !'node_modules')
+gulp.task('eslint-test', function(){
+//source is all files in lab-doug except node_modules folder
+  return gulp.src([__dirname + '**/*.js',  '!/node_modules/**'])
 //   //stream it through eslint
-//   .pipe(eslint)
-// });
+  .pipe(eslint())
+  .pipe(eslint.format());
+});
