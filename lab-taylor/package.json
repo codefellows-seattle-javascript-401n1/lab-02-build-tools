@@ -1,0 +1,29 @@
+{
+  "name": "lab-taylor",
+  "version": "0.0.1",
+  "description": "Taylor's awesome lab for Codefellows 401",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tlwirtz/lab-02-build-tools.git"
+  },
+  "author": "Taylor Wirtz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tlwirtz/lab-02-build-tools/issues"
+  },
+  "homepage": "https://github.com/tlwirtz/lab-02-build-tools#readme",
+  "devDependencies": {
+    "eslint": "^2.9.0",
+    "gulp": "^3.9.1",
+    "gulp-eslint": "^2.0.0",
+    "gulp-mocha": "^2.2.0",
+    "mocha": "^2.4.5"
+  }
+}
