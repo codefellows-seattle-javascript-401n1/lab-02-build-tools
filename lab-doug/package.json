@@ -1,0 +1,25 @@
+{
+  "name": "lab-doug",
+  "version": "1.0.0",
+  "description": "lab-02-build-tools",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gsmatth/lab-02-build-tools.git"
+  },
+  "author": "gsmatth@icloud.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gsmatth/lab-02-build-tools/issues"
+  },
+  "homepage": "https://github.com/gsmatth/lab-02-build-tools#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}
