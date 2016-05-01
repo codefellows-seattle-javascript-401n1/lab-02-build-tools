@@ -1,7 +1,7 @@
 'use strict';
 
 const getGreet = require(__dirname + '/../lib/greet');
-const assert = require('assert');
+const assert = require('assert')
 
 
 describe('Greeting', function() {
