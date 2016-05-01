@@ -16,3 +16,8 @@ gulp.task('lint', function(){
   .pipe(eslint.format())
   .pipe(eslint.failAfterError());
 });
+
+var watcher = gulp.watch(['**/*.js', '!node_modules/**', '!package.json'], ['lint', 'test']);
+watcher.on('change', function(event){
+  console.log(event.path + ' was ' + event.type + ', running tasks...');
+});

@@ -8,6 +8,6 @@ greeter.greeting = function(name) {
   console.log('hello ' + input);
   return 'hello ' + input;
 };
-greeter.greeting('Sam');
+greeter.greeting();
 
 module.exports = greeter;
