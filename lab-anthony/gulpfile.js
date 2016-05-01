@@ -11,7 +11,9 @@ gulp.task('default', function(){
             .pipe(eslint.format());
 });
 
-const watcher = gulp.watch(['*.js', 'test/*.js', '!package.json'], ['default']);
-watcher.on('change', function(e){
-  console.log('The file '+e.path+' was '+e.type+', running tasks...');
+gulp.task('watch', function(){
+  const watcher = gulp.watch(['*.js', 'test/*.js', '!package.json'], ['default']);
+  watcher.on('change', function(e){
+    console.log('The file '+e.path+' was '+e.type+', running tasks again:');
+  });
 });
