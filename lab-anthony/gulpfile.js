@@ -1,12 +1,17 @@
 'use strict';
 
-var gulp = require('gulp');
-var mocha = require('gulp-mocha');
-var eslint = require('gulp-eslint');
+const gulp = require('gulp');
+const mocha = require('gulp-mocha');
+const eslint = require('gulp-eslint');
 
 gulp.task('default', function(){
-  return gulp.src(['*.js', 'test/*.js'])
+  return gulp.src(['*.js', 'test/*.js', '!package.json'])
             .pipe(mocha())
             .pipe(eslint())
             .pipe(eslint.format());
+});
+
+const watcher = gulp.watch(['*.js', 'test/*.js', '!package.json'], ['default']);
+watcher.on('change', function(e){
+  console.log('The file '+e.path+' was '+e.type+', running tasks...');
 });
