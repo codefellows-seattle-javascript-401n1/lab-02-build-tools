@@ -1,0 +1,19 @@
+{
+  "name": "lab-anthony",
+  "version": "0.1.0",
+  "description": "using gulp to run mocha/assert/eslint",
+  "main": "greet-cli.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "@ascasson",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-eslint": "^2.0.0",
+    "gulp-mocha": "^2.2.0"
+  }
+}
