@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = function(name){
-  const input = name || process.argv[2] || 'Justin';
+  const input = name ;
 
   return 'hello ' + input;
 };
