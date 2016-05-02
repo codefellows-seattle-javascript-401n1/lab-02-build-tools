@@ -4,10 +4,8 @@ var gulp = require('gulp');
 var eslint = require('gulp-eslint');
 var mocha = require('gulp-mocha');
 
-gulp.task('default', ['mocha-test', 'eslint-test'], function(){
-  console.log('mocha-test ran');
-  console.log('eslint-ran');
-});
+gulp.task('default', ['mocha-test', 'eslint-test']
+);
 
 gulp.task('mocha-test', function(){
   //src is greet-test.js
@@ -17,8 +15,8 @@ gulp.task('mocha-test', function(){
 });
 gulp.task('eslint-test', function(){
 //source is all files in lab-doug except node_modules folder
-  return gulp.src([__dirname + '**/*.js',  '!/node_modules/**'])
-//   //stream it through eslint
+  return gulp.src([__dirname + '/**/*.js',  '!/node_modules/**'])
+  //stream it through eslint
   .pipe(eslint())
   .pipe(eslint.format());
 });
