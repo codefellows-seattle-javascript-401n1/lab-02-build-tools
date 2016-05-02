@@ -5,7 +5,7 @@ const mocha = require('gulp-mocha');
 const eslint = require('gulp-eslint');
 
 gulp.task('default', function(){
-  return gulp.src(['*.js', 'test/*.js'])
+  return gulp.src(['*.js', 'test/*.js', 'lib/*.js'])
             .pipe(mocha())
             .pipe(eslint(
               {
@@ -54,5 +54,5 @@ gulp.task('default', function(){
 });
 
 gulp.task('watch', function(){
-  gulp.watch(['*.js', 'test/*.js', '!package.json'], ['default']);
+  gulp.watch(['*.js', 'test/*.js', 'lib/*.js'], ['default']);
 });
