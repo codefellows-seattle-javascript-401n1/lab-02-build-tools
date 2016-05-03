@@ -17,8 +17,7 @@
   },
   "homepage": "https://github.com/kyleschnirring/lab-02-build-tools#readme",
   "devDependencies": {
-    "gulp-mocha": "^2.2.0",
-    "gulp-watch": "^4.3.5"
+    "gulp-mocha": "^2.2.0"
   },
   "dependencies": {
     "gulp": "^3.9.1",

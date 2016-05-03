@@ -6,7 +6,7 @@ const mocha = require('gulp-mocha');
 
 const paths = ['*.js', 'lab-kyle/lib/*.js', 'lab-kyle/test/*.js'];
 
-gulp.task('lint', function() {
+gulp.task('eslint', function() {
   return gulp.src(paths)
     .pipe(eslint(
       {
@@ -59,7 +59,7 @@ gulp.task('test', function() {
 });
 
 gulp.task('watch', function() {
-  gulp.watch(['lab-kyle/lib/**', 'lab-kyle/test/**'], ['test', 'lint']);
+  gulp.watch(['lab-kyle/lib/**', 'lab-kyle/test/**'], ['test', 'eslint']);
 });
 
-gulp.task('default', ['lint', 'test', 'watch']);
+gulp.task('default', ['eslint', 'test', 'watch']);
