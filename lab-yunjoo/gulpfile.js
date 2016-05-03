@@ -18,4 +18,3 @@ gulp.task('checking', function(){
 });
 
 gulp.task('default',['lint','mocha','checking']);
-// {read: false},{reporter: 'nyan'})
