@@ -1,0 +1,27 @@
+{
+  "name": "yunjoo",
+  "version": "1.0.0",
+  "description": "practice gulp",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha/assert"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/moniqueyj/lab-02-build-tools.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/moniqueyj/lab-02-build-tools/issues"
+  },
+  "homepage": "https://github.com/moniqueyj/lab-02-build-tools#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-eslint": "^2.0.0",
+    "gulp-mocha": "^2.2.0"
+  }
+}
