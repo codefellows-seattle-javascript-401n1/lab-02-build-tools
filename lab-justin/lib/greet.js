@@ -1,7 +1,5 @@
 'use strict';
 
-module.exports = function(name){
-  const input = name ;
-
-  return 'hello ' + input;
+module.exports = function greet(name){
+  return 'hello ' + name;
 };

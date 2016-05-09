@@ -1,24 +1,26 @@
-'use strict';
+'run strict';
 
 const gulp = require('gulp');
 const mocha = require('gulp-mocha');
 const eslint = require('gulp-eslint');
 
-gulp.task('default', function(){
+var paths = ['**/*.js', 'test/*.js'];
 
-  return gulp.src('test/*.js')
+gulp.task('mocha', function(){
+  return gulp.src(paths, !'node_modules')
   .pipe(mocha());
 });
 
 gulp.task('eslint', function(){
-
-  return gulp.src('*.js')
+  return gulp.src(paths)
   .pipe(eslint())
   .pipe(eslint.format())
   .pipe(eslint.failAfterError());
 });
 
-var watcher = gulp.watch('*.js', !'package.json');
-watcher.on('change', function(event) {
-  console.log('File ' + event.path + ' was ' + event.type + ', running tasks...');
+gulp.task('watch', ()=>{
+  gulp.watch('**/*.js', !'package.json', ['eslint']);
+  gulp.watch('test/*.js', ['eslint', 'mocha']);
+
 });
+gulp.task('default', ['eslint', 'mocha', 'watch']);
