@@ -7,7 +7,7 @@ const eslint = require('gulp-eslint');
 var paths = ['**/*.js', 'test/*.js'];
 
 gulp.task('mocha', function(){
-  return gulp.src(paths, !'node_modules')
+  return gulp.src('test/*.js', !'node_modules')
   .pipe(mocha());
 });
 
