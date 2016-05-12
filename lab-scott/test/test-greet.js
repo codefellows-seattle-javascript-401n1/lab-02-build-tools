@@ -14,10 +14,4 @@ describe('Testing module lib/greet.js', function() {
       assert.equal(greet(process.argv[2] = 'Scott'), 'Hello Scott');
     });
   });
-
-  describe('Testing function greeting; multiple cli args', function() {
-    it('Should return Hello Nicole', function() {
-      assert.equal(greet(process.argv = 'Nicole', 'Mark', 'Susan'), 'Hello Nicole');
-    });
-  });
 });
