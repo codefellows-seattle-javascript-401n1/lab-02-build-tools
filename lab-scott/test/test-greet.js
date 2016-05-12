@@ -5,23 +5,19 @@ const greet = require(__dirname + '/../lib/greet.js');
 describe('Testing module lib/greet.js', function() {
   describe('Testing function greeting; no cli arg', function() {
     it('Should return Hello Nobody', function() {
-      assert.equal(greet(process.argv = []), 'Hello Nobody');
+      assert.equal(greet(process.argv[2]), 'Hello Nobody');
     });
   });
-});
 
-describe('Testing module lib/greet.js', function() {
   describe('Testing function greeting; one cli arg', function() {
     it('Should return Hello Scott', function() {
-      assert.equal(greet(process.argv = ['Scott']), 'Hello Scott');
+      assert.equal(greet(process.argv[2] = 'Scott'), 'Hello Scott');
     });
   });
-});
 
-describe('Testing module lib/greet.js', function() {
   describe('Testing function greeting; multiple cli args', function() {
     it('Should return Hello Nicole', function() {
-      assert.equal(greet(process.argv = ['Nicole', 'Molly', 'Frank']), 'Hello Nicole');
+      assert.equal(greet(process.argv = 'Nicole', 'Mark', 'Susan'), 'Hello Nicole');
     });
   });
 });
