@@ -10,13 +10,15 @@ gulp.task('test', function() {
   return gulp.src(__dirname + '/test/*.js')
   .pipe(mocha());
 });
+
 gulp.task('lint', function() {
   return gulp.src(['**/*.js', '!node_modules/**'])
   .pipe(eslint()).pipe(eslint.format());
 });
-var watcher = gulp.watch(['**/*.js','!node_modules**'], ['test', 'lint']);
-watcher.on('change', function(event) {
-  console.log('File ' + event.path + ' was ' + event.type + ', running tasks...');
+
+gulp.task('watcher', function() {
+  gulp.watch(['**/*.js','!node_modules**'], ['test', 'lint']);
 });
-gulp.task('default', ['test', 'lint'], function() {
+
+gulp.task('default', ['test', 'lint', 'watcher'], function() {
 });

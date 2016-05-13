@@ -6,4 +6,4 @@ const main = module.exports = function() {
   return greet('andrew');
 };
 
-console.log(main());
+console.log(main('andrew'));
