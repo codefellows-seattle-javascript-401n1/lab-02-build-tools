@@ -14,6 +14,4 @@ gulp.task('test', function(){
   .pipe(mocha());
 });
 
-gulp.task('default', ['test', 'lint'], function(){
-
-});
+gulp.task('default', ['test', 'lint']);
