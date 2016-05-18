@@ -1,0 +1,27 @@
+{
+  "name": "lab-02-build-tools",
+  "version": "0.0.1",
+  "description": "build tools lab",
+  "main": "main.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kyleschnirring/lab-02-build-tools.git"
+  },
+  "author": "Kyle Schnirring",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kyleschnirring/lab-02-build-tools/issues"
+  },
+  "homepage": "https://github.com/kyleschnirring/lab-02-build-tools#readme",
+  "devDependencies": {
+    "gulp-mocha": "^2.2.0",
+    "gulp": "^3.9.1",
+    "gulp-eslint": "^2.0.0"
+  },
+  "dependencies": {
+
+  }
+}
