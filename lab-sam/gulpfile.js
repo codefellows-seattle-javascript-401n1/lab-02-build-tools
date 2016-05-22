@@ -17,7 +17,7 @@ gulp.task('lint', function(){
   .pipe(eslint.failAfterError());
 });
 
-var watcher = gulp.watch(['**/*.js', '!node_modules/**', '!package.json'], ['lint', 'test']);
+var watcher = gulp.watch([__dirname + '**/*.js', '!node_modules/**', '!package.json'], ['lint', 'test']);
 watcher.on('change', function(event){
   console.log(event.path + ' was ' + event.type + ', running tasks...');
 });
